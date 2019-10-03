@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF0C471C-4D41-4A90-9717-473F491513BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI_Tarea5</RootNamespace>
+    <AssemblyName>UI_Tarea5</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pantallas\frm_Cifras_Divisores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\frm_Cifras_Divisores.Designer.cs">
+      <DependentUpon>frm_Cifras_Divisores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\frm_Fechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\frm_Fechas.Designer.cs">
+      <DependentUpon>frm_Fechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\frm_Principal.Designer.cs">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\frm_TablasMultiplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\frm_TablasMultiplicar.Designer.cs">
+      <DependentUpon>frm_TablasMultiplicar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pantallas\frm_Cifras_Divisores.resx">
+      <DependentUpon>frm_Cifras_Divisores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\frm_Fechas.resx">
+      <DependentUpon>frm_Fechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\frm_Principal.resx">
+      <DependentUpon>frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\frm_TablasMultiplicar.resx">
+      <DependentUpon>frm_TablasMultiplicar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL_Tarea5\BLL_Tarea5.csproj">
+      <Project>{433dbcdc-1264-43cd-8837-8c5886b01d53}</Project>
+      <Name>BLL_Tarea5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL_Tarea5\DAL_Tarea5.csproj">
+      <Project>{cdf16270-d57a-456e-bbb4-62423bac960e}</Project>
+      <Name>DAL_Tarea5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagenes\fondo azul.jpg" />
+    <None Include="Resources\calendarfondo.jpg" />
+    <None Include="Resources\fondoMulti1.jpg" />
+    <None Include="Resources\fondoMulti.jpg" />
+    <None Include="Resources\fondoNUmeros.jpg" />
+    <None Include="Resources\fondo azul.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
