@@ -137,7 +137,7 @@
             // 
             this.btn_Cargar.BackColor = System.Drawing.Color.Green;
             this.btn_Cargar.ForeColor = System.Drawing.Color.Black;
-            this.btn_Cargar.Location = new System.Drawing.Point(9, 33);
+            this.btn_Cargar.Location = new System.Drawing.Point(9, 19);
             this.btn_Cargar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cargar.Name = "btn_Cargar";
             this.btn_Cargar.Size = new System.Drawing.Size(108, 30);
